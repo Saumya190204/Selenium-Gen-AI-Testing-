@@ -161,7 +161,7 @@
 #_____________________________________________________________________________________________________
 #XPath using contains() with Attribute
 # Syntax
-#  //tagname[contains(@attribute,'value')]
+#  //tag name[contains(@attribute,'value')]
 #Meaning:
 # Find an element
 # whose attribute contains a specific partial value

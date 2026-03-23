@@ -59,18 +59,34 @@ from time import sleep
 # driver.close() # only the driver opened tab will be closed
 # driver.quit() # entire browser all the tabs will be closed
 
+# from selenium.webdriver import Chrome,ChromeOptions
+# o=ChromeOptions()
+# o.add_experimental_option("detach",True)
+# driver=Chrome(options=o)
+#
+#
+# #TO OPEN A WEB PAGE
+# driver.get("https://www.amazon.com")
+# print(driver.title)
+# driver.back()
+# sleep(10)
+# driver.forward()
+# sleep(5)
+# driver.refresh()
+#
+
+
+from time import sleep
 from selenium.webdriver import Chrome,ChromeOptions
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 o=ChromeOptions()
 o.add_experimental_option("detach",True)
 driver=Chrome(options=o)
-
-
-#TO OPEN A WEB PAGE
-driver.get("https://www.amazon.com")
-print(driver.title)
-driver.back()
-sleep(10)
-driver.forward()
-sleep(5)
-driver.refresh()
-
+driver.get("https://www.amazon.in")
+driver.maximize_window()
+sleep(2)
+driver.find_element(By.ID,"twotabsearchtextbox").send_keys("mobiles")
+sleep(2)
+driver.find_element(By.ID,"nav-search-submit-button").click()
+driver.find_element(By.XPATH,"//div[@class='puisg-col-inner']")

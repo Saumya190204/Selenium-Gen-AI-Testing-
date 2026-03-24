@@ -139,5 +139,4 @@ print(driver.title)
 print(driver.window_handles)
 sleep(2)
 driver.switch_to.window(driver.window_handles[0])
-driver
 

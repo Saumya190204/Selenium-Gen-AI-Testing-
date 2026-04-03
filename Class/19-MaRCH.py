@@ -98,21 +98,21 @@
 
 
 #WORKING ON FORMS IN Selenium
-from selenium.webdriver import Chrome,ChromeOptions
-from selenium.webdriver.common.by import By
-o=ChromeOptions()
-o.add_experimental_option("detach",True)
-driver=Chrome(options=o)
-driver.implicitly_wait(15)
-driver.get("https://demoqa.com/automation-practice-form")
-driver.maximize_window()
-driver.find_element(By.ID,"firstName").send_keys("Saumya")
-driver.find_element(By.ID,"lastName").send_keys("Jain")
-driver.find_element(By.ID,"userEmail").send_keys("saumya19@gmail.com")
-driver.find_element(By.ID,"gender-radio-1").click()
-# driver.find_element(By.XPATH,"//div[@class='subjects-auto-complete__input-container css-19bb58m']").send_keys("Hindi")
-# driver.find_element(By.XPATH,"//div[@class='subjects-auto-complete__input-container css-19bb58m']").send_keys(',English')
-driver.find_element(By.ID,"userNumber").send_keys("98745633100")
-driver.find_element(By.ID,"dateOfBirthInput").click()
-driver.find_element(By.XPATH,"(//div[@class='react-datepicker__week'][3]//div)[3]").click()
-driver.find_element(By.ID)
+# from selenium.webdriver import Chrome,ChromeOptions
+# from selenium.webdriver.common.by import By
+# o=ChromeOptions()
+# o.add_experimental_option("detach",True)
+# driver=Chrome(options=o)
+# driver.implicitly_wait(15)
+# driver.get("https://demoqa.com/automation-practice-form")
+# driver.maximize_window()
+# driver.find_element(By.ID,"firstName").send_keys("Saumya")
+# driver.find_element(By.ID,"lastName").send_keys("Jain")
+# driver.find_element(By.ID,"userEmail").send_keys("saumya19@gmail.com")
+# driver.find_element(By.ID,"gender-radio-1").click()
+# # driver.find_element(By.XPATH,"//div[@class='subjects-auto-complete__input-container css-19bb58m']").send_keys("Hindi")
+# # driver.find_element(By.XPATH,"//div[@class='subjects-auto-complete__input-container css-19bb58m']").send_keys(',English')
+# driver.find_element(By.ID,"userNumber").send_keys("98745633100")
+# driver.find_element(By.ID,"dateOfBirthInput").click()
+# driver.find_element(By.XPATH,"(//div[@class='react-datepicker__week'][3]//div)[3]").click()
+# driver.find_element(By.ID)

@@ -5,21 +5,21 @@
 #i.find the static element
 # ii.from the static element find the common parent of static and dynamic element
 # iii.fetch the dynamic element data
-# from time import sleep
-# from selenium.webdriver import Chrome,ChromeOptions
-# from selenium.webdriver.common.by import By
-# o=ChromeOptions()
-# o.add_experimental_option("detach",True)
-# o.add_argument('--headless')#this is a chrome settings to not open browser everytime but everything is going in the background, and we can see the terminal result
-# driver=Chrome(options=o)
-# driver.get("https://demoqa.com/webtables")
-# sleep(2)
-# driver.maximize_window()
-# sleep(2)
-# salary=driver.find_element(By.XPATH,"//td[text()='Cierra']/..//td[5]")
-# print("Your Salary is ",salary.text)
-# department=driver.find_element(By.XPATH,"//td[text()='Vega']/..//td[6]")
-# print("Your Assigned Department is ",department.text)
+from time import sleep
+from selenium.webdriver import Chrome,ChromeOptions
+from selenium.webdriver.common.by import By
+o=ChromeOptions()
+o.add_experimental_option("detach",True)
+#o.add_argument('--headless')#this is a chrome settings to not open browser everytime but everything is going in the background, and we can see the terminal result
+driver=Chrome(options=o)
+driver.get("https://demoqa.com/webtables")
+sleep(2)
+driver.maximize_window()
+sleep(2)
+salary=driver.find_element(By.XPATH,"//td[text()='Cierra']/..//td[5]")
+print("Your Salary is ",salary.text)
+department=driver.find_element(By.XPATH,"//td[text()='Vega']/..//td[6]")
+print("Your Assigned Department is ",department.text)
 
 # from time import sleep
 # from selenium.webdriver import Chrome,ChromeOptions
